@@ -1,0 +1,576 @@
+/*Colores de amor por primera Birra*/
+/**/
+
+/*Importacion de Fuentes Titulo*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Mochiy+Pop+P+One&family=Rubik+Beastly&family=Secular+One&display=swap");
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Rubik Beastly', cursive;
+font-family: 'Secular One', sans-serif;*/
+
+/*Importacion de Fuentes Texto*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Rubik+Beastly&family=Secular+One&display=swap");
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Rubik Beastly', cursive;
+font-family: 'Secular One', sans-serif;*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Secular One", sans-serif;
+}
+
+body {
+  background-color: #b1cfea;
+}
+
+.amorlogo {
+  width: 28%;
+  margin-top: -8%;
+  margin-bottom: -8%;
+}
+
+.header {
+  box-shadow: 0 3px 5px black;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0px;
+  background-color: #e9b49d;
+}
+
+li {
+  padding: 0 15px;
+}
+
+ul a:hover {
+  background-color: #c17e52;
+}
+
+/*Container fotos y texto*/
+.imagenes-container {
+  display: flex;
+  background-color: transparent;
+  margin-top: 2%;
+}
+
+.imagenes-container.texto-1 {
+  background-color: transparent;
+  width: 150px;
+  margin: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Secular One", sans-serif;
+}
+
+.imagenes-container-2 {
+  display: flex;
+  background-color: transparent;
+  margin-top: 2%;
+}
+
+.imagenes-container-2.texto-2 {
+  background-color: transparent;
+  width: 100px;
+  margin: 0px;
+  text-align: left;
+  line-height: 50px;
+  padding: 2%;
+  font-family: "Secular One", sans-serif;
+}
+
+.texto-1 {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: "Secular One", sans-serif;
+}
+
+.texto-2 {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 16px;
+  overflow: hidden;
+  margin-bottom: 2%;
+  font-family: "Secular One", sans-serif;
+}
+
+.imagen-1 {
+  margin-top: 0%;
+  width: 48%;
+}
+
+.imagen-2 {
+  margin-top: 2%;
+  width: 48%;
+  float: right;
+  margin-bottom: 2%;
+}
+
+.imagen-tejer {
+  margin-top: 2%;
+  width: 300%;
+  margin-bottom: 2%;
+}
+
+.redes-sociales-container {
+  display: flex;
+  background-color: #e9b49d;
+  justify-content: space-around;
+}
+.redes {
+  background-color: #e9b49d;
+  width: 100px;
+  margin: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 50px;
+  margin-left: 14%;
+}
+
+.Facebook-logo {
+  width: 50px;
+  margin-top: 25px;
+}
+
+.Facebook-logo:hover {
+  width: 65px;
+}
+
+.Instagram-logo {
+  width: 50px;
+  margin-top: 25px;
+}
+.Instagram-logo:hover {
+  width: 65px;
+}
+
+.redes-texto {
+  font-size: 25px;
+  text-align: center;
+  color: #644f41;
+}
+
+h2 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin: 2%;
+  text-shadow: 2px 2px 2px white;
+  font-size: 32px;
+}
+
+/*------------------Parallax------------------------*/
+.main-parallax {
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 2px;
+}
+
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.no-parallax {
+  background-color: #c17e52;
+  z-index: 999;
+}
+
+section h1 {
+  margin: 5%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Secular One", sans-serif;
+}
+
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../imagenes/fotocerca.jpeg");
+  background-size: cover;
+}
+/*-----------------FIN PARALLAX---------------*/
+
+.materiales {
+  background-image: url("images/imagen_pequena.png");
+  background-attachment: fixed;
+}
+
+/*-------ENVIOS---------*/
+/*.mapa-argentina {
+  width: 50%;
+}*/
+
+/*.container-texto-envios {
+  position: static;
+}
+
+.texto-envios {
+  position: absolute;
+  font-size: 20px;
+  top: 40%;
+  left: 50%;
+  padding: 1%;
+}*/
+
+.imagen-3 {
+  padding: 2%;
+  width: 38%;
+}
+
+.imagen-modelos {
+  width: 50%;
+  padding: 2%;
+}
+
+/* GRIDS*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 25%);
+  grid-column-gap: 3px;
+  grid-row-gap: 5px;
+  padding: 2%;
+  justify-self: stretch;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 5;
+  text-align: center;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 3;
+  width: 60%;
+}
+.div3 {
+  grid-area: 2 / 3 / 3 / 5;
+  font-size: 16px;
+}
+.div4 {
+  grid-area: 3 / 1 / 4 / 3;
+  padding: 2%;
+}
+
+.div5 {
+  grid-area: 3 / 3 / 4 / 5;
+  padding: 2%;
+}
+
+.logos-grid {
+  width: 5%;
+}
+
+/*medias*/
+
+@media screen and (min-width: 360px) {
+  body {
+    background-color: #b1cfea;
+  }
+
+  .amorlogo {
+    width: 28%;
+    margin-top: -8%;
+    margin-bottom: -8%;
+  }
+
+  .header {
+    box-shadow: 0 3px 5px black;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+
+  ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #e9b49d;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+
+  ul a:hover {
+    background-color: #c17e52;
+  }
+
+  /*Container fotos y texto*/
+  .imagenes-container {
+    display: flex;
+    background-color: transparent;
+    margin-top: 2%;
+  }
+
+  .imagenes-container.texto-1 {
+    background-color: transparent;
+    width: 50px;
+    margin: 0px;
+    text-align: center;
+    line-height: 80px;
+    font-family: "Secular One", sans-serif;
+  }
+
+  .imagenes-container-2 {
+    display: flex;
+    background-color: transparent;
+    margin-top: 2%;
+  }
+
+  .imagenes-container-2.texto-2 {
+    background-color: transparent;
+    width: 100px;
+    margin: 0px;
+    text-align: left;
+    line-height: 50px;
+    padding: 2%;
+    font-family: "Secular One", sans-serif;
+  }
+
+  .texto-1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 16px;
+    overflow: hidden;
+    font-family: "Secular One", sans-serif;
+  }
+
+  .texto-2 {
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 16px;
+    overflow: hidden;
+    margin-bottom: 2%;
+    font-family: "Secular One", sans-serif;
+  }
+
+  .imagen-1 {
+    margin-top: 0%;
+    width: 48%;
+  }
+
+  .imagen-2 {
+    margin-top: 2%;
+    width: 48%;
+    float: right;
+    margin-bottom: 2%;
+  }
+
+  .imagen-tejer {
+    margin-top: 2%;
+    width: 300%;
+    margin-bottom: 2%;
+  }
+
+  .redes-sociales-container {
+    display: flex;
+    background-color: #e9b49d;
+    justify-content: space-around;
+  }
+  .redes {
+    background-color: #e9b49d;
+    width: 80px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 14%;
+  }
+
+  .Facebook-logo {
+    width: 30px;
+    margin-top: 15px;
+  }
+
+  .Facebook-logo:hover {
+    width: 45px;
+  }
+
+  .Instagram-logo {
+    width: 30px;
+    margin-top: 15px;
+  }
+  .Instagram-logo:hover {
+    width: 45px;
+  }
+
+  .redes-texto {
+    font-size: 16px;
+    text-align: center;
+    color: #644f41;
+  }
+
+  h2 {
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 2%;
+    text-shadow: 2px 2px 2px white;
+    font-size: 16px;
+  }
+
+  /*------------------Parallax------------------------*/
+  .main-parallax {
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 2px;
+  }
+
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .no-parallax {
+    background-color: #c17e52;
+    z-index: 999;
+  }
+
+  section h1 {
+    margin: 5%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Secular One", sans-serif;
+  }
+
+  .parallax h1 {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .bg::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../imagenes/fotocerca.jpeg");
+    background-size: cover;
+  }
+  /*-----------------FIN PARALLAX---------------*/
+
+  .materiales {
+    background-image: url("images/imagen_pequena.png");
+    background-attachment: fixed;
+  }
+
+  /*-------ENVIOS---------*/
+  /*.mapa-argentina {
+  width: 50%;
+}*/
+
+  /*.container-texto-envios {
+  position: static;
+}
+
+.texto-envios {
+  position: absolute;
+  font-size: 20px;
+  top: 40%;
+  left: 50%;
+  padding: 1%;
+}*/
+
+  .imagen-3 {
+    padding: 2%;
+    width: 38%;
+  }
+
+  .imagen-modelos {
+    width: 50%;
+    padding: 2%;
+  }
+
+  /* GRIDS*/
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 25%);
+    grid-column-gap: 3px;
+    grid-row-gap: 5px;
+    padding: 2%;
+    justify-self: stretch;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 5;
+    text-align: center;
+  }
+  .div2 {
+    grid-area: 2 / 1 / 3 / 3;
+    width: 100%;
+  }
+  .div3 {
+    grid-area: 2 / 3 / 3 / 5;
+    font-size: 16px;
+  }
+  .div4 {
+    grid-area: 3 / 1 / 4 / 3;
+    padding: 2%;
+  }
+
+  .div5 {
+    grid-area: 3 / 3 / 4 / 5;
+    padding: 2%;
+  }
+
+  .logos-grid {
+    width: 5%;
+  }
+}
